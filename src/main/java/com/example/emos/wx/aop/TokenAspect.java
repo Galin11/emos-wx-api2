@@ -21,7 +21,7 @@ public class TokenAspect {
 
     }
 
-    @Around("aspect()")
+    @Around("aspect()")         //业务处理后 执行 controller之后
     public Object around(ProceedingJoinPoint point) throws Throwable {
         R r = (R) point.proceed(); //方法执行结果
         String token = threadLocalToken.getToken();

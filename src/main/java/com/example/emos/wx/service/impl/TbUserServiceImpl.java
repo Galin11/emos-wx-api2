@@ -97,6 +97,19 @@ public class TbUserServiceImpl extends ServiceImpl<TbUserMapper, TbUser>  implem
         return permissions;
     }
 
+    @Override
+    public Integer login(String code) {
+        String openId = getOpenId(code);
+        Integer id = userMapper.searchIdByOpenId(openId);
+        if (id == null) {
+            throw new EmosException("帐户不存在");
+        }
+
+        //TODO 从消息队列中接收消息，转移到消息表
+        return id;
+    }
+
+
 }
 
 

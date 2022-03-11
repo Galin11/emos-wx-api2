@@ -32,7 +32,7 @@ public class ShiroConfig {
         //oauth过滤
         Map<String, Filter> filters = new HashMap<>();
         filters.put("oauth2", oAuth2Filter);
-        shiroFilter.setFilters(filters);
+        shiroFilter.setFilters(filters);                //注册springmvc过滤器
 
         Map<String, String> filterMap = new LinkedHashMap<>();
         filterMap.put("/webjars/**", "anon");

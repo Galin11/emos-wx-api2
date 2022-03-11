@@ -24,7 +24,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 @Component
-@Scope("prototype")
+@Scope("prototype")         //springmvc过滤器
 public class OAuth2Filter extends AuthenticatingFilter {
     @Autowired
     private ThreadLocalToken threadLocalToken;
@@ -151,7 +151,7 @@ public class OAuth2Filter extends AuthenticatingFilter {
 
     }
 
-    @Override
+    @Override       //2、
     public void doFilterInternal(ServletRequest request,
                                  ServletResponse response, FilterChain chain) throws ServletException, IOException {
         super.doFilterInternal(request, response, chain);

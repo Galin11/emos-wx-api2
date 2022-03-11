@@ -13,7 +13,7 @@ import java.io.IOException;
  * @version: 1.0
  */
 
-@WebFilter(urlPatterns = "/*")
+@WebFilter(urlPatterns = "/*") //1、普通的servlet过滤器 优先执行 早于springmvc框架过滤器执行
 public class XssFilter implements Filter {
 
 
