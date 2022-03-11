@@ -46,6 +46,9 @@ spring:
       authentication-database: admin
       username: admin
       password: abc123456
+  activemq:
+    pool:
+      time-between-expiration-check:
 
 #配置mybatis
 mybatis:
@@ -70,3 +73,7 @@ emos:
     expire: 5
     #令牌缓存时间（天数） redis缓存
     cache-expire: 10
+#小程序信息
+wx:
+  app-id: wxa78def8355e76993
+  app-secret: 8faefb63e176a7a9dc5ee4edd2366545

@@ -1,4 +1,4 @@
-package com.example.emos.wx.db.service;
+package com.example.emos.wx.service;
 
 import com.example.emos.wx.db.pojo.TbWorkday;
 import com.baomidou.mybatisplus.extension.service.IService;

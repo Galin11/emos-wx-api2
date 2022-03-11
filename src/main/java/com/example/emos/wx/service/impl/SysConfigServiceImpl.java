@@ -1,8 +1,8 @@
-package com.example.emos.wx.db.service.impl;
+package com.example.emos.wx.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.emos.wx.db.pojo.SysConfig;
-import com.example.emos.wx.db.service.SysConfigService;
+import com.example.emos.wx.service.SysConfigService;
 import com.example.emos.wx.db.mapper.SysConfigMapper;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 */
 @Service
 public class SysConfigServiceImpl extends ServiceImpl<SysConfigMapper, SysConfig>
-    implements SysConfigService{
+    implements SysConfigService {
 
 }
 
